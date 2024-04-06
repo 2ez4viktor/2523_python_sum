@@ -1,2 +1,2 @@
 a = (tiger, lion, monkey, panda)
-print (type(a))
+print ("hello")
