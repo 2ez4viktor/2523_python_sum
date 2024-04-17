@@ -1,0 +1,5 @@
+#exercise-01
+a = 50
+b = 10
+when a > b then
+print('Hello World')
