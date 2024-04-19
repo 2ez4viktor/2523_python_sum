@@ -1,305 +1,149 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyPK84xt5aifp9rD61/wZjTn"
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "code",
-      "execution_count": null,
-      "metadata": {
-        "id": "C7rcm5GM_knF"
-      },
-      "outputs": [],
-      "source": [
-        "#exercise-01\n",
-        "a = 50\n",
-        "b = 10\n",
-        "if a > b :\n",
-        "  print('Hello World')"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-02\n",
-        "a = 50\n",
-        "b = 10\n",
-        "\n",
-        "if a != b :\n",
-        "  print('Hello World')"
-      ],
-      "metadata": {
-        "id": "qVkO1w8EAerJ"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-03\n",
-        "a=50\n",
-        "b=10\n",
-        "if a == b :\n",
-        "  print('Yes')\n",
-        "else:\n",
-        "  print('No')"
-      ],
-      "metadata": {
-        "id": "FXpA4gjLBB3M"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-04\n",
-        "a=50\n",
-        "b=10\n",
-        "if a == b :\n",
-        "  print('1')\n",
-        "elif a > b :\n",
-        "  print('2')\n",
-        "else:\n",
-        "  print('3')"
-      ],
-      "metadata": {
-        "id": "-7NSc_CwBaps"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-05\n",
-        "a=1\n",
-        "b=1\n",
-        "c=3\n",
-        "d=3\n",
-        "if a==b and c==d :\n",
-        "  print('Hello')\n",
-        "\n",
-        "a=1\n",
-        "b=1\n",
-        "c=2\n",
-        "d=3\n",
-        "if a==b or c==d :\n",
-        "  print('Hello')"
-      ],
-      "metadata": {
-        "id": "fa8csb5cBuPy"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-06\n",
-        "if 5>2:\n",
-        "  print('Yes')\n",
-        "\n",
-        "a=2\n",
-        "b=5\n",
-        "print('Yes') if a==b else print('No')"
-      ],
-      "metadata": {
-        "id": "ChOLMeJ9B_jR"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-07\n",
-        "a=2\n",
-        "b=50\n",
-        "c=2\n",
-        "if a or b ==c:\n",
-        "  print('YES')"
-      ],
-      "metadata": {
-        "id": "sZHYlRvZCV2x"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-08\n",
-        "a=int(input('Type a number'))\n",
-        "if a%2 ==0:\n",
-        "  print(a, ' is an even number')\n",
-        "else:\n",
-        "  print(a, ' is an odd number')"
-      ],
-      "metadata": {
-        "id": "6pKT8lrtDBvc"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-09\n",
-        "a= input('Are you a citizen ofMyanmar?   y/n   ')\n",
-        "b= input('Are you under 18 years?  y/n   ')\n",
-        "c= input('Do you have an ID card?  y/n   ')\n",
-        "d= input('Are you currently prison sentenced?  y/n   ')\n",
-        "e= input('Are you a religious leader like a monk or a nun?  y/n   ')\n",
-        "\n",
-        "if b and e and d ==\"n\" and a and c==\"y\":\n",
-        "  print('You are eligible to vote!!!')\n",
-        "else:\n",
-        "  print('Sorry, you are not eligible to vote.')"
-      ],
-      "metadata": {
-        "id": "Q_-S8a6IEAWd"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-10\n",
-        "a= int(input(\"Please insert base of triangle  \"))\n",
-        "b= int(input(\"Please insert height of triangle  \"))\n",
-        "print('Area of triangle is ', a*b*0.5)"
-      ],
-      "metadata": {
-        "id": "rRHmcFp6G0Bk"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-11\n",
-        "a = int(input('Please insert number 1 '))\n",
-        "b = int(input('Please insert number 2 '))\n",
-        "c = int(input('Please insert number 3 '))\n",
-        "if a > b or a > c:\n",
-        "  print('The largest number is ', a)\n",
-        "elif b > c:\n",
-        "  print('The largest number is ', b)\n",
-        "else:\n",
-        "  print('The largest number is ', c)"
-      ],
-      "metadata": {
-        "id": "3zS4Iwnz3SY7"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-12\n",
-        "ticket = int(input('Please enter number of tickets you want to buy : '))\n",
-        "if ticket > 20:\n",
-        "  print ('You cannot buy more than 20 tickets.')\n",
-        "elif ticket == 20:\n",
-        "  print ('Total ticket price for ', ticket ,'tickets is ', ticket * 20 * 0.8)\n",
-        "elif ticket >= 10:\n",
-        "  print ('Total ticket price for ', ticket ,'tickets is ', ticket * 20 * 0.9)\n",
-        "else:\n",
-        "    print ('Total ticket price for ', ticket ,'tickets is ', ticket * 20)"
-      ],
-      "metadata": {
-        "id": "OMItsmbl4hBH"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-13\n",
-        "score = int(input('Please enter your score : '))\n",
-        "if score < 50:\n",
-        "  print('Your score is F')\n",
-        "elif score < 60:\n",
-        "  print('Your score is E')\n",
-        "elif score < 70:\n",
-        "  print('Your score is C')\n",
-        "elif score < 80:\n",
-        "  print('Your score is B')\n",
-        "else:\n",
-        "  print('Your score is A')"
-      ],
-      "metadata": {
-        "id": "1bi7LYZk7IXE"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-14\n",
-        "capacity = int(input('How many passengers can ride on this boat? '))\n",
-        "passenger = int(input('How many passengers are there to transport? '))\n",
-        "if passenger % capacity == 0:\n",
-        "  print('The boat need to go ', passenger // capacity , ' trips.')\n",
-        "else:\n",
-        "  print('The boat need to go ', passenger // capacity +1 ,' trips.')"
-      ],
-      "metadata": {
-        "id": "J7WwRXsn75GE"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#exercise-15\n",
-        "mark = int(input('Enter mark : '))\n",
-        "if mark < 50:\n",
-        "  print('Your grade is F')\n",
-        "elif mark < 55:\n",
-        "  print('Your grade is D')\n",
-        "elif mark < 60:\n",
-        "  print('Your score is C-')\n",
-        "elif mark < 65:\n",
-        "  print('Your score is C')\n",
-        "elif mark < 70:\n",
-        "  print('Your grade is C+')\n",
-        "elif mark < 75:\n",
-        "  print('Your score is B-')\n",
-        "elif mark < 80:\n",
-        "  print('Your score is B')\n",
-        "elif mark < 85:\n",
-        "  print('Your grade is B+')\n",
-        "elif mark < 90:\n",
-        "  print('Your score is A-')\n",
-        "else:\n",
-        "  print('Your score is A')"
-      ],
-      "metadata": {
-        "id": "0nWF0nGq8-4s"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ]
-}
+# Exercise 01
+a = 50
+b = 10
+if a > b:
+    print('Hello World')
+
+# Exercise 02
+a = 50
+b = 10
+if a != b:
+    print('Hello World')
+
+# Exercise 03
+a = 50
+b = 10
+if a == b:
+    print('Yes')
+else:
+    print('No')
+
+# Exercise 04
+a = 50
+b = 10
+if a == b:
+    print('1')
+elif a > b:
+    print('2')
+else:
+    print('3')
+
+# Exercise 05
+a = 1
+b = 1
+c = 3
+d = 3
+if a == b and c == d:
+    print('Hello')
+
+a = 1
+b = 1
+c = 2
+d = 3
+if a == b or c == d:
+    print('Hello')
+
+# Exercise 06
+if 5 > 2:
+    print('Yes')
+
+a = 2
+b = 5
+print('Yes') if a == b else print('No')
+
+# Exercise 07
+a = 2
+b = 50
+c = 2
+if a or b == c:
+    print('YES')
+
+# Exercise 08
+a = int(input('Type a number'))
+if a % 2 == 0:
+    print(a, ' is an even number')
+else:
+    print(a, ' is an odd number')
+
+# Exercise 09
+a = input('Are you a citizen of Myanmar?   y/n   ')
+b = input('Are you under 18 years?  y/n   ')
+c = input('Do you have an ID card?  y/n   ')
+d = input('Are you currently prison sentenced?  y/n   ')
+e = input('Are you a religious leader like a monk or a nun?  y/n   ')
+
+if b and e and d == "n" and a and c == "y":
+    print('You are eligible to vote!!!')
+else:
+    print('Sorry, you are not eligible to vote.')
+
+# Exercise 10
+a = int(input("Please insert base of triangle  "))
+b = int(input("Please insert height of triangle  "))
+print('Area of triangle is ', a * b * 0.5)
+
+# Exercise 11
+a = int(input('Please insert number 1 '))
+b = int(input('Please insert number 2 '))
+c = int(input('Please insert number 3 '))
+if a > b or a > c:
+    print('The largest number is ', a)
+elif b > c:
+    print('The largest number is ', b)
+else:
+    print('The largest number is ', c)
+
+# Exercise 12
+ticket = int(input('Please enter number of tickets you want to buy : '))
+if ticket > 20:
+    print('You cannot buy more than 20 tickets.')
+elif ticket == 20:
+    print('Total ticket price for ', ticket ,'tickets is ', ticket * 20 * 0.8)
+elif ticket >= 10:
+    print('Total ticket price for ', ticket ,'tickets is ', ticket * 20 * 0.9)
+else:
+    print('Total ticket price for ', ticket ,'tickets is ', ticket * 20)
+
+# Exercise 13
+score = int(input('Please enter your score : '))
+if score < 50:
+    print('Your score is F')
+elif score < 60:
+    print('Your score is E')
+elif score < 70:
+    print('Your score is C')
+elif score < 80:
+    print('Your score is B')
+else:
+    print('Your score is A')
+
+# Exercise 14
+capacity = int(input('How many passengers can ride on this boat? '))
+passenger = int(input('How many passengers are there to transport? '))
+if passenger % capacity == 0:
+    print('The boat need to go ', passenger // capacity , ' trips.')
+else:
+    print('The boat need to go ', passenger // capacity + 1 ,' trips.')
+
+# Exercise 15
+mark = int(input('Enter mark : '))
+if mark < 50:
+    print('Your grade is F')
+elif mark < 55:
+    print('Your grade is D')
+elif mark < 60:
+    print('Your score is C-')
+elif mark < 65:
+    print('Your score is C')
+elif mark < 70:
+    print('Your grade is C+')
+elif mark < 75:
+    print('Your score is B-')
+elif mark < 80:
+    print('Your score is B')
+elif mark < 85:
+    print('Your grade is B+')
+elif mark < 90:
+    print('Your score is A-')
+else:
+    print('Your score is A')
