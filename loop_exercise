@@ -1,0 +1,6 @@
+num_terms - int(input('fibonacci series count : '))
+fib_series = [0,1]
+for i inn range(2,num_terms):
+  next_term = fib_series[-1] + fib_series[-2]
+  fib_series.append(next_term)
+print('fibonacci up to', num_terms,' terms :', fib_series
