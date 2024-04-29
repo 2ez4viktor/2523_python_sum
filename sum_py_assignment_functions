@@ -1,6 +1,35 @@
+#exercise01
 def TriangleArea(Htri,Btri):
   Atri = Htri * Btri * 0.5
   return Atri
-Htri = float(input('Enter triangle's height :'))
-Btri = float(input('Enter triangle's Base :'))
-print('Area of the triangle is ', TriangleArea())
+Htri = float(input('Enter triangle height :'))
+Btri = float(input('Enter triangle Base :'))
+print('Area of the triangle is ', TriangleArea(Htri,Btri))
+#exercise02
+def CircleArea(Cradius):
+  Acir = Cradius * 2 * 3.1416
+  return Acir
+Cradius = float(input('Enter radius of the circle :'))
+print('Area of the circle is ', CircleArea(Cradius))
+#exercise03
+def sum(Scores):
+  TotalScore1=0
+  for score in Scores:
+    TotalScore1 += score
+  return TotalScore1
+Scores = [56,75,64,82,77,68]
+Total = sum(Scores)
+AvgScore1 = Total/ len(Scores)
+print('Total=',Total,' Average=','%.2f' % AvgScore1)
+#need to update exercise04
+def ScoreList4():
+  List4 = []
+  for x in range(5):
+    List4.append(int(input('Enter score =')))
+  return List4
+def Total4(Score4):
+  TotalS4 = 0
+  for Score in List4:
+    TotalS4 += Score
+  return TotalS4
+print('Total Score is ', Total4(List4))
