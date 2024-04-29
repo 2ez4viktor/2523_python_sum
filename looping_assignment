@@ -17,7 +17,6 @@ while m < 6:
   if m ==3:
     continue
 print (m)
-
 #exercise-04
 i4 = 1
 while i4 < 6:
@@ -30,7 +29,25 @@ print ('no longer less than 6')
 fruits5=['apple','banana','cherry']
 for x in fruits5:
   print(x)
-  
+#exercise-06
+fruits6=['apple','banana','cherry']
+for x in fruits6:
+print(x)
+#exercise-07
+fruits7=['apple','banana','cherry']
+for x in fruits7:
+  if x=='banana':
+    continue
+print(x)
+#exercise-08
+for x in range(10):
+  print(x)
+#exercise-09
+fruits6=['apple','banana','cherry']
+for x in fruits6:
+  if x =='banana':
+    break
+print(x)
 #exercise-10
 num_terms = int(input('fibonacci series count : '))
 fib_series = [0,1]
