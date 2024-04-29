@@ -1,0 +1,6 @@
+def TriangleArea(Htri,Btri):
+  Atri = Htri * Btri * 0.5
+  return Atri
+Htri = float(input('Enter triangle's height :'))
+Btri = float(input('Enter triangle's Base :'))
+print('Area of the triangle is ', TriangleArea())
