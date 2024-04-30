@@ -21,7 +21,7 @@ Scores = [56,75,64,82,77,68]
 Total = sum(Scores)
 AvgScore1 = Total/ len(Scores)
 print('Total=',Total,' Average=','%.2f' % AvgScore1)
-#need to update exercise04
+#exercise04
 def ScoreList4():
   List4 = []
   for x in range(5):
@@ -29,7 +29,9 @@ def ScoreList4():
   return List4
 def Total4(Score4):
   TotalS4 = 0
-  for Score in List4:
+  for Score in Score4:
     TotalS4 += Score
   return TotalS4
-print('Total Score is ', Total4(List4))
+print('Total Score is ', Total4(ScoreList4()))
+#exercise05
+
