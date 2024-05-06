@@ -1,0 +1,41 @@
+#exercise05
+def GetScores():
+    num_students = int(input("Enter the number of students: "))
+    scores = []
+    for i in range(num_students):
+        score = -1
+        while score < 0 or score > 100:
+            score = int(input(f"Enter score for student {i+1}: "))
+            if score < 0 or score > 100:
+                print("Score must be between 0 and 100.")
+        scores.append(score)
+    return scores
+
+def Total(scores):
+    return sum(scores)
+
+def Average(scores):
+    return round(sum(scores) / len(scores),2)
+
+def Max(scores):
+    return max(scores)
+
+def Min(scores):
+    return min(scores)
+
+def Passed(scores):
+    passed_students = sum(1 for score in scores if score >= 50)
+    return passed_students
+
+def Failed(scores):
+    return len(scores) - Passed(scores)
+
+def proceed():
+    scores = GetScores()
+    print("Total score:", Total(scores))
+    print("Average score:", Average(scores))
+    print("Maximum score:", Max(scores))
+    print("Minimum score:", Min(scores))
+    print("Number of students passed:", Passed(scores))
+    print("Number of students failed:", Failed(scores))
+print(proceed())
