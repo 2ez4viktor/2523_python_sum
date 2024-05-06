@@ -1,0 +1,6 @@
+#exercise02
+def CircleArea(Cradius):
+  Acir = Cradius * 2 * 3.1416
+  return Acir
+Cradius = float(input('Enter radius of the circle :'))
+print('Area of the circle is ', CircleArea(Cradius))
