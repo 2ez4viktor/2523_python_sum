@@ -1,0 +1,12 @@
+#exercise04
+def ScoreList4():
+  List4 = []
+  for x in range(5):
+    List4.append(int(input('Enter score =')))
+  return List4
+def Total4(Score4):
+  TotalS4 = 0
+  for Score in Score4:
+    TotalS4 += Score
+  return TotalS4
+print('Total Score is ', Total4(ScoreList4()))
